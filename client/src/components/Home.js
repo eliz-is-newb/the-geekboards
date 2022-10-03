@@ -8,7 +8,7 @@ return (
 <>
  <div id="Page-wrapper"
  style={{
-    width:"140%",
+   
     height: "100vh",
     backgroundImage: "url(./background.png)",
     backgroundSize: "cover",
@@ -16,8 +16,10 @@ return (
  }}
  > 
 
-    <div id="Banner-wrapper">
-yo
+    <div id="Banner-wrapper"
+    style={{ paddingLeft:"600px", paddingTop:"200px", paddingRight:"400px"}}
+    >
+        <img src="./banner.png" />
     </div>
     <div id="Boards-wrapper">
 
