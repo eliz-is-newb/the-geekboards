@@ -7,7 +7,7 @@ return (
 <>
  <div id="Nav-wrapper"
  > 
-   <nav class="navbar has-shadow"
+   <nav class="navbar"
    style={{ backgroundColor:"#416E7C"}}
    role="navigation" aria-label="main navigation">
   <div class="navbar-brand"

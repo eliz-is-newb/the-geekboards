@@ -6,7 +6,16 @@ return (
 
 
 <>
- <div id="Page-wrapper"> 
+ <div id="Page-wrapper"
+ style={{
+    width:"140%",
+    height: "100vh",
+    backgroundImage: "url(./background.png)",
+    backgroundSize: "cover",
+
+ }}
+ > 
+
     <div id="Banner-wrapper">
 yo
     </div>
