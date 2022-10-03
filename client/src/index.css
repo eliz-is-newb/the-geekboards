@@ -1,4 +1,4 @@
-* {
+html, body {
   @font-face {
     font-family: good-chan font;
     src: url('./random.ttf');
