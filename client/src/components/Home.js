@@ -17,7 +17,7 @@ return (
  > 
 
     <div id="Banner-wrapper"
-    style={{ marginLeft:"200px", paddingTop:"100px"}}
+    style={{ marginLeft:"400px", paddingTop:"100px", width: "800px"}}
     >
         <img src="./banner.png" />
     </div>
@@ -26,7 +26,7 @@ return (
     >
 
         <div
-        style={{marginLeft:"200px", width:"220px"}}
+        style={{marginLeft:"300px", width:"125px"}}
         >
         <img src="./boards1.png"/>
 
@@ -39,10 +39,10 @@ return (
              <div class="dropdown-trigger">
             
             <button 
-            style={{paddingTop:"35px", paddingBottom:"35px", paddingLeft:"15px", marginRight:"15px"}}
+            style={{paddingTop:"20px", paddingBottom:"20px", paddingLeft:"15px", marginRight:"15px"}}
             class="button" aria-haspopup="true" aria-controls="dropdown-menu">
             <strong
-             style={{fontSize: "25px"}}
+             style={{fontSize: "16px"}}
             >Japanese Culture</strong>
             </button>
       </div>
@@ -76,10 +76,10 @@ return (
                             <div class="dropdown-trigger">
                             
                             <button 
-                            style={{paddingTop:"35px", paddingBottom:"35px", paddingLeft:"15px", marginRight:"15px"}}
+                            style={{paddingTop:"20px", paddingBottom:"20px", paddingLeft:"15px", marginRight:"15px"}}
                             class="button" aria-haspopup="true" aria-controls="dropdown-menu">
                             <strong
-                            style={{fontSize: "25px"}}
+                            style={{fontSize: "16px"}}
                             >Video Games</strong>
                             </button>
                     </div>
@@ -119,10 +119,10 @@ return (
                             <div class="dropdown-trigger">
                             
                             <button 
-                            style={{paddingTop:"35px", paddingBottom:"35px", paddingLeft:"15px" , marginRight:"15px"}}
+                            style={{paddingTop:"20px", paddingBottom:"20px", paddingLeft:"15px" , marginRight:"15px"}}
                             class="button" aria-haspopup="true" aria-controls="dropdown-menu">
                             <strong
-                            style={{fontSize: "25px"}}
+                            style={{fontSize: "16px"}}
                             >Interests</strong>
                             </button>
                     </div>
@@ -163,10 +163,10 @@ return (
                             <div class="dropdown-trigger">
                             
                             <button 
-                            style={{paddingTop:"35px", paddingBottom:"35px", paddingLeft:"15px" , marginRight:"15px"}}
+                            style={{paddingTop:"20px", paddingBottom:"20px", paddingLeft:"15px" , marginRight:"15px"}}
                             class="button" aria-haspopup="true" aria-controls="dropdown-menu">
                             <strong
-                            style={{fontSize: "25px"}}
+                            style={{fontSize: "16px"}}
                             >Creative</strong>
                             </button>
                     </div>
@@ -207,10 +207,10 @@ return (
                             <div class="dropdown-trigger">
                             
                             <button 
-                            style={{paddingTop:"35px", paddingBottom:"35px", paddingLeft:"15px" , marginRight:"15px"}}
+                            style={{paddingTop:"20px", paddingBottom:"20px", paddingLeft:"15px" , marginRight:"15px", width:"120px"}}
                             class="button" aria-haspopup="true" aria-controls="dropdown-menu">
                             <strong
-                            style={{fontSize: "25px"}}
+                            style={{fontSize: "16px"}}
                             >Other</strong>
                             </button>
                     </div>
@@ -245,10 +245,10 @@ return (
                             <div class="dropdown-trigger">
                             
                             <button 
-                            style={{paddingTop:"35px", paddingBottom:"35px", paddingLeft:"15px", marginRight:"15px"}}
+                            style={{paddingTop:"20px", paddingBottom:"20px", paddingLeft:"15px", marginRight:"15px", width:"120px"}}
                             class="button" aria-haspopup="true" aria-controls="dropdown-menu">
                             <strong
-                            style={{fontSize: "25px"}}
+                            style={{fontSize: "16px"}}
                             >Music</strong>
                             </button>
                     </div>

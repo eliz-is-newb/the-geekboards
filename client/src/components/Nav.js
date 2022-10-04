@@ -11,11 +11,11 @@ return (
    style={{ backgroundColor:"#416E7C"}}
    role="navigation" aria-label="main navigation">
   <div class="navbar-brand"
-  style={{paddingRight:"1px", width:"200px", height:"80px"}}
+  style={{paddingRight:"1px", width:"200px", height:"10px"}}
   >
     <a class="navbar-item" href="/">
       <img 
-      style={{paddingLeft:"20px", width:"300px", maxHeight:"200px"}}
+      style={{paddingLeft:"10px", paddingTop:"px", width:"200px", maxHeight:"200px"}}
       src="./navbarlogo.png"/>
     </a>
 
@@ -29,21 +29,21 @@ return (
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start"
-    style={{paddingLeft: "120px", paddingTop: "15px"}}
+    style={{paddingLeft: "30px", paddingTop: "15px"}}
     >
-      <a class="navbar-item">
+      <a>
 
       <div class="control has-icons-right has-icons-right"
       >
         <input 
-        style={{borderRadius: "4px", width:"100%"}}
+        style={{borderRadius: "4px", width:"100%", height:"25px"}}
         class="input is-small" type="search" placeholder="Search"/>
          <span class="icon is-small is-right">
          <i
-         style={{paddingTop:"2px", paddingRight:"8px"}}
+         style={{paddingBottom:"2px", paddingRight:"7px"}}
          >
             <img 
-            style={{width: "25px"}}
+            style={{width: "20px"}}
             src="./searchicon.png"/> 
 
          </i>
@@ -59,18 +59,18 @@ return (
   </div>
 
   <div class="navbar-end" 
-  style={{position:"absolute", right:"130px", paddingTop:"15px"}}
+  style={{position:"absolute", right:"130px", paddingTop:"4px"}}
     >
       <div class="navbar-item">
         <div class="buttons">
           <a  style={{borderRadius:"4px"}}
-          class="button is-normal">
+          class="button is-small">
            
             <strong>Login</strong>
           </a>
           <a 
           style={{backgroundColor: "#C6A44C", color:"#8D4900", borderRadius:"4px"}}
-          class="button is-normal is-primary">
+          class="button is-small is-primary">
             <strong>Sign up</strong>
           </a>
         </div>
@@ -78,7 +78,7 @@ return (
     </div>
 
     <div class="navbar-item has-dropdown is-hoverable"
-    style={{paddingTop: "11px", paddingRight:"60px"}}
+    style={{paddingTop: "4px", paddingRight:"60px"}}
     >
         <a className="navbar-item">
         <img src="./moreoptionsbutton.png"/>
