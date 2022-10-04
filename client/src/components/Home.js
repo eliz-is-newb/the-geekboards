@@ -17,19 +17,21 @@ return (
  > 
 
     <div id="Banner-wrapper"
-    style={{ paddingLeft:"600px", paddingTop:"200px", paddingRight:"400px"}}
+    style={{ marginLeft:"200px", paddingTop:"100px"}}
     >
         <img src="./banner.png" />
     </div>
-    <div id="Boards-wrapper">
+    <div id="Boards-wrapper"
+
+    >
 
         <div
-        style={{marginLeft:"350px", width:"220px"}}
+        style={{marginLeft:"200px", width:"220px"}}
         >
         <img src="./boards1.png"/>
 
         <div id="boards-dropdown-container"
-        style={{paddingTop:"30px", paddingLeft:"20px", display:"flex"}}
+        style={{paddingTop:"30px", paddingLeft:"0px", display:"flex", width:"1000px", paddingRight:"100px"}}
         >
 
        {/* Boards, japanese culture */}
@@ -40,7 +42,7 @@ return (
             style={{paddingTop:"35px", paddingBottom:"35px", paddingLeft:"15px", marginRight:"15px"}}
             class="button" aria-haspopup="true" aria-controls="dropdown-menu">
             <strong
-             style={{fontSize: "35px"}}
+             style={{fontSize: "25px"}}
             >Japanese Culture</strong>
             </button>
       </div>
@@ -77,7 +79,7 @@ return (
                             style={{paddingTop:"35px", paddingBottom:"35px", paddingLeft:"15px", marginRight:"15px"}}
                             class="button" aria-haspopup="true" aria-controls="dropdown-menu">
                             <strong
-                            style={{fontSize: "35px"}}
+                            style={{fontSize: "25px"}}
                             >Video Games</strong>
                             </button>
                     </div>
@@ -120,7 +122,7 @@ return (
                             style={{paddingTop:"35px", paddingBottom:"35px", paddingLeft:"15px" , marginRight:"15px"}}
                             class="button" aria-haspopup="true" aria-controls="dropdown-menu">
                             <strong
-                            style={{fontSize: "35px"}}
+                            style={{fontSize: "25px"}}
                             >Interests</strong>
                             </button>
                     </div>
@@ -164,7 +166,7 @@ return (
                             style={{paddingTop:"35px", paddingBottom:"35px", paddingLeft:"15px" , marginRight:"15px"}}
                             class="button" aria-haspopup="true" aria-controls="dropdown-menu">
                             <strong
-                            style={{fontSize: "35px"}}
+                            style={{fontSize: "25px"}}
                             >Creative</strong>
                             </button>
                     </div>
@@ -208,7 +210,7 @@ return (
                             style={{paddingTop:"35px", paddingBottom:"35px", paddingLeft:"15px" , marginRight:"15px"}}
                             class="button" aria-haspopup="true" aria-controls="dropdown-menu">
                             <strong
-                            style={{fontSize: "35px"}}
+                            style={{fontSize: "25px"}}
                             >Other</strong>
                             </button>
                     </div>
@@ -246,7 +248,7 @@ return (
                             style={{paddingTop:"35px", paddingBottom:"35px", paddingLeft:"15px", marginRight:"15px"}}
                             class="button" aria-haspopup="true" aria-controls="dropdown-menu">
                             <strong
-                            style={{fontSize: "35px"}}
+                            style={{fontSize: "25px"}}
                             >Music</strong>
                             </button>
                     </div>
