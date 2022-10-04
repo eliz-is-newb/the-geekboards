@@ -17,7 +17,7 @@ return (
  > 
 
     <div id="Banner-wrapper"
-    style={{ marginLeft:"400px", paddingTop:"100px", width: "800px"}}
+    style={{ marginLeft:"631px", paddingTop:"185px", width: "1000px"}}
     >
         <img src="./banner.png" />
     </div>
@@ -26,7 +26,7 @@ return (
     >
 
         <div
-        style={{marginLeft:"300px", width:"125px"}}
+        style={{marginLeft:"560px", width:"125px"}}
         >
         <img src="./boards1.png"/>
 
