@@ -8,10 +8,10 @@ return (
  <div id="Nav-wrapper"
  > 
    <nav class="navbar"
-   style={{ backgroundColor:"#416E7C"}}
+   style={{ backgroundColor:"#416E7C", maxHeight:"50px"}}
    role="navigation" aria-label="main navigation">
   <div class="navbar-brand"
-  style={{paddingRight:"1px", width:"200px", height:"10px"}}
+  style={{paddingRight:"1px", width:"200px", height:"30px"}}
   >
     <a class="navbar-item" href="/">
       <img 
@@ -29,18 +29,18 @@ return (
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start"
-    style={{paddingLeft: "30px", paddingTop: "15px"}}
+    style={{paddingLeft: "30px", paddingTop: "15px", fontFamily:"bold-font" }}
     >
       <a>
 
       <div class="control has-icons-right has-icons-right"
       >
         <input 
-        style={{borderRadius: "4px", width:"100%", height:"25px"}}
+        style={{borderRadius: "5px", width:"100%", height:"25px"}}
         class="input is-small" type="search" placeholder="Search"/>
          <span class="icon is-small is-right">
          <i
-         style={{paddingBottom:"2px", paddingRight:"7px"}}
+         style={{paddingBottom:"1px", paddingRight:"7px"}}
          >
             <img 
             style={{width: "20px"}}
@@ -59,19 +59,25 @@ return (
   </div>
 
   <div class="navbar-end" 
-  style={{position:"absolute", right:"130px", paddingTop:"4px"}}
+  style={{position:"absolute", right:"130px", paddingTop:"3.px"}}
     >
       <div class="navbar-item">
         <div class="buttons">
           <a  style={{borderRadius:"4px"}}
           class="button is-small">
            
-            <strong>Login</strong>
+            <strong
+            style={{fontFamily: "bold-font", fontSize: "19px"}}
+            >Login</strong>
           </a>
           <a 
           style={{backgroundColor: "#C6A44C", color:"#8D4900", borderRadius:"4px"}}
           class="button is-small is-primary">
-            <strong>Sign up</strong>
+            <strong
+             style={{fontFamily: "bold-font", fontSize: "19px"}}
+            
+            >
+              Sign up</strong>
           </a>
         </div>
       </div>
