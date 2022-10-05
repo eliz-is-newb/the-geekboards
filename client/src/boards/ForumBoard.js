@@ -53,8 +53,8 @@ style={{
 <div id="board-title">
             <div style={{
                 display:"flex", justifyContent:"center",
-                position:"absolute", zIndex:"4", top:"-234px", right:"1128px",
-                width:"456px",
+                position:"absolute", zIndex:"4", top:"-234px", right:"1373px",
+                width:"184px",
                 paddingTop:"20px", paddingBottom:"20px", borderRadius:"10px",
                 backgroundColor: "black", border:"white 1px solid",
                 fontFamily:"bold-font",

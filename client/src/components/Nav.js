@@ -31,7 +31,7 @@ return (
       style={{paddingLeft:"20px", marginLeft:"225px", paddingRight:"20px"}}
       >
         <input 
-        style={{borderRadius: "4px", width:"700px",maxWidth:"120%", height:"27px", backgroundColor:"grey", border:"black 1px solid", color:"black"}}
+        style={{borderRadius: "4px", width:"700px",maxWidth:"120%", height:"27px", backgroundColor:"white", border:"black 1px solid", color:"black"}}
         class="input is-small" type="search" placeholder="Search..."/>
          <span>
          <i
