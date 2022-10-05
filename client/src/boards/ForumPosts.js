@@ -15,21 +15,14 @@ return (
 style={{
     fontFamily:"bold-font", 
     fontSize:"25px",
-    position:"absolute",
-    paddingTop:"20px", 
-    paddingLeft:"20px",
-    width:"500px",
-    backgroundColor:"blue", 
-    height:"200px",
-    border: "black 4px solid", 
-    borderRadius:"6px", 
-    display:"flex"
     
     }}
 >
+<p style={{marginTop:"-40px", marginLeft:"40px"}}>
+    hi
+</p>
 
 
-lkjdls
 </div>
 
 

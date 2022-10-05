@@ -32,7 +32,7 @@ return (
       >
         <input 
         style={{borderRadius: "4px", width:"700px",maxWidth:"120%", height:"27px", backgroundColor:"grey", border:"black 1px solid", color:"black"}}
-        class="input is-small" type="search"/>
+        class="input is-small" type="search" placeholder="Search..."/>
          <span>
          <i
          style={{paddingBottom:"3px"}}

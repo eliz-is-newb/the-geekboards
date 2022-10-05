@@ -20,8 +20,8 @@ style={{
 <div id="page-elements-wrapper"
 style={{display: "flex", justifyContent: "center", position: "relative",
 
- paddingTop:"58px",
- paddingLeft:"20px"  
+ paddingTop:"48px",
+ paddingLeft:"10px"  
 
  }}>
 
@@ -33,7 +33,7 @@ style={{
     position:"absolute", top:"262px"
 
  }}>
-    <div style={{
+    {/* <div style={{
 
     height: "50px", width:"691px",
     backgroundColor: "white", paddingTop:"6px", borderRadius:"4px", left:"881px",
@@ -46,19 +46,19 @@ style={{
     <img 
     style={{position:"absolute", top:"-131px", right:"-12px", width:"60px", display:"inline-block", transform: "rotate(270deg)"}}
     
-    src="./doublearrow.png"></img>
+    src="./doublearrow.png"></img> */}
 
     
 <br/>
 <div id="board-title">
             <div style={{
                 display:"flex", justifyContent:"center",
-                position:"absolute", zIndex:"4", top:"-174px", right:"720px",
+                position:"absolute", zIndex:"4", top:"-234px", right:"1128px",
                 width:"456px",
                 paddingTop:"20px", paddingBottom:"20px", borderRadius:"10px",
-                backgroundColor: "black", border:"white 3px solid",
+                backgroundColor: "black", border:"white 1px solid",
                 fontFamily:"bold-font",
-                fontSize:"35px",
+                fontSize:"20px",
                 color:"white",
             
                 
@@ -75,22 +75,16 @@ style={{
 
             <div id="board-background"
             style={{
-                position:"absolute", top:"-39px", right:"-727px",
-                height: "60px", width:"1900px", paddingTop:"1000px", borderRadius:"4px",
+                position:"relative", top:"-146px", right:"707px", opacity:"0.7",
+                height: "60px", width:"400px", paddingTop:"300px", borderRadius:"4px",
                 backgroundColor: "white",
                 
                 }}>
-                
+                    
+                    <FormPosts />
 
             </div>
-                        <div style={{position:"absolute", left:"-288px", display: "grid", flex:"row wrap" }}>
-
-                        <div>
-                            <FormPosts />
-                        </div>
-
-
-                        </div>  
+                       
 <div id="board-comments">
 
 <div id="board-likes"></div>
