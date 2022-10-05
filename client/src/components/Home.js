@@ -12,7 +12,7 @@ return (
  <div id="Page-wrapper"
  style={{
    fontFamily: "medium-font",
-    height: "100vh",
+    height: "120vh",
     backgroundImage: "url(./background.png)",
     backgroundSize: "cover", 
   
@@ -22,27 +22,30 @@ return (
  > 
 
     <div id="Banner-wrapper"
-    style={{ marginLeft:"631px", paddingTop:"185px", width: "1200px", display: "flex", justifyContent: "center",}}
+    style={{ marginLeft:"225px", paddingTop:"175px", width: "900px", display: "flex", justifyContent: "center",}}
     >
-        <img src="./banner.png" />
+        <img 
+        style={{position:"absolute", top:"134px", left:"297px", width:"800px"}}
+        src="./banner.png" />
     </div>
     <div id="Boards-wrapper"
- style={{paddingTop:"30px", paddingLeft:"629px", display:"flex", justifyItems:"center", width:"1000px"}}
+ style={{paddingTop:"30px", paddingLeft:"211px", display:"flex", justifyItems:"center", width:"1000px"}}
     >
 
         <div
         style={{
             position: "absolute", 
             backgroundColor:"black", 
-            border:"3px white solid", 
-            top:"596px", 
-            paddingTop:"10px", 
-            paddingBottom:"10px",
-            paddingLeft: "38px",
-            left: "641px", 
+            border:"1px white solid", 
+            top:"394px", 
+            paddingTop:"4px", 
+            paddingRight:"2x",
+            paddingBottom:"5px",
+            paddingLeft: "19px",
+            left: "225px", 
             zIndex:"4", 
-            width:"167px",
-            borderRadius: "10px", 
+            width:"120px",
+            borderRadius: "7px", 
             color: "white",
             fontFamily: "bold-font",
             fontSize: "25px"
@@ -53,11 +56,11 @@ return (
         style={{ width:"170px"}}
         >
         <img 
-        style={{position: "relative", right:"-65px"}}
+        style={{position: "relative", right:"-22px", top:"93px"}}
         src="./boards1.png"/>
 
         <div id="boards-dropdown-container"
-        style={{paddingTop:"33px", display:"flex", justifyItems:"center", width:"1000px", paddingLeft:"12px"
+        style={{paddingTop:"107px", display:"flex", justifyItems:"center", width:"1000px", paddingLeft:"12px"
     }}>
 
        {/* Boards, japanese culture */}

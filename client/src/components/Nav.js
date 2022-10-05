@@ -8,43 +8,36 @@ return (
  <div id="Nav-wrapper"
  > 
    <nav class="navbar"
-   style={{ backgroundColor:"#416E7C", maxHeight:"50px"}}
+   style={{ backgroundColor:"black", paddingBottom:"70px",paddingTop:"20px", maxHeight:"60px"}}
    role="navigation" aria-label="main navigation">
   <div class="navbar-brand"
-  style={{paddingRight:"1px", width:"200px", height:"30px"}}
+  style={{paddingRight:"100px", width:"200px", maxHeight:"50px"}}
   >
     <a class="navbar-item" href="/">
-      <img 
-      style={{paddingLeft:"10px", paddingTop:"px", width:"200px", maxHeight:"200px"}}
-      src="./navbarlogo.png"/>
+      <p
+      style={{paddingLeft:"41px",paddingTop:"0px", width:"400px", maxHeight:"300px", fontFamily:"bold-font", color:"white", fontSize:"25px",}}
+      > The Geek Boards</p>
     </a>
 
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-
-      <span aria-hidden="false"></span>
-      <span aria-hidden="false"></span>
-      <span aria-hidden="false"></span>
-    </a>
   </div>
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start"
-    style={{paddingLeft: "30px", paddingTop: "15px", fontFamily:"bold-font" }}
+    style={{paddingLeft: "60px", width:"600px", paddingTop: "13px", fontFamily:"bold-font", display:"flex", justifyContent:"center"}}
     >
       <a>
 
-      <div class="control has-icons-right has-icons-right"
+      <div class="control"
+      style={{paddingLeft:"20px", marginLeft:"225px", paddingRight:"20px"}}
       >
         <input 
-        style={{borderRadius: "5px", width:"100%", height:"25px"}}
-        class="input is-small" type="search" placeholder="Search"/>
-         <span class="icon is-small is-right">
+        style={{borderRadius: "4px", width:"700px",maxWidth:"120%", height:"27px", backgroundColor:"grey", border:"black 1px solid", color:"black"}}
+        class="input is-small" type="search"/>
+         <span>
          <i
-         style={{paddingBottom:"1px", paddingRight:"7px"}}
+         style={{paddingBottom:"3px"}}
          >
-            <img 
-            style={{width: "20px"}}
-            src="./searchicon.png"/> 
+         
 
          </i>
         </span>
@@ -59,19 +52,19 @@ return (
   </div>
 
   <div class="navbar-end" 
-  style={{position:"absolute", right:"130px", paddingTop:"3.px"}}
+  style={{ paddingTop:"18px", paddingLeft:"200px"}}
     >
       <div class="navbar-item">
         <div class="buttons">
-          <a  style={{borderRadius:"4px"}}
+          <a  style={{borderRadius:"4px", backgroundColor:"transparent", color:"white", marginRight:"15px", padding:"10px", paddingTop:"5px"}}
           class="button is-small">
            
             <strong
-            style={{fontFamily: "bold-font", fontSize: "19px"}}
+            style={{fontFamily: "bold-font", fontSize: "19px", paddingTop:"4px"}}
             >Login</strong>
           </a>
           <a 
-          style={{backgroundColor: "#C6A44C", color:"#8D4900", borderRadius:"4px"}}
+          style={{backgroundColor: "white", color:"black", borderRadius:"4px"}}
           class="button is-small is-primary">
             <strong
              style={{fontFamily: "bold-font", fontSize: "19px"}}
@@ -83,14 +76,18 @@ return (
       </div>
     </div>
 
-    <div class="navbar-item has-dropdown is-hoverable"
-    style={{paddingTop: "4px", paddingRight:"60px"}}
+    <div class="navbar-item has-dropdown is-hoverable is-trigger"
+    style={{paddingTop: "20px", paddingRight:"40px", backgroundColor: "transparent"}}
     >
-        <a className="navbar-item">
-        <img src="./moreoptionsbutton.png"/>
+        <a 
+        style={{backgroundColor:"transparent"}}
+        className="navbar-item">
+        <img src="./invert.png"/>
         </a>
 
-        <div class="navbar-dropdown is-right">
+        <div class="navbar-dropdown is-right"
+        style={{marginTop:"20px", marginRight:"20px", backgroundColor:"black", fontFamily:"regular-font", color:"white", border:"1px black solid", borderRadius:"7px"}}
+        >
           <a class="navbar-item">
             About
           </a>
