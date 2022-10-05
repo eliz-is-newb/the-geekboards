@@ -6,6 +6,7 @@ import FormPosts from "./ForumPosts";
 
 const ForumBoard = () => {
 
+    const fakeArray = [1,2,3,4,5,7]
 return (
 
 <>
@@ -28,9 +29,8 @@ style={{display: "flex", justifyContent: "center", position: "relative",
 <div id="board-wrapper-3"
 style={{
     
-    height: "50px", width:"850px",
+    height: "50px",
      paddingTop:"6px", borderRadius:"4px", left:"770px",
-    position:"absolute", top:"262px"
 
  }}>
     {/* <div style={{
@@ -49,11 +49,10 @@ style={{
     src="./doublearrow.png"></img> */}
 
     
-<br/>
+
 <div id="board-title">
             <div style={{
                 display:"flex", justifyContent:"center",
-                position:"absolute", zIndex:"4", top:"-234px", right:"1373px",
                 width:"184px",
                 paddingTop:"20px", paddingBottom:"20px", borderRadius:"10px",
                 backgroundColor: "black", border:"white 1px solid",
@@ -73,15 +72,16 @@ style={{
 
 </div>
 
-            <div id="board-background"
-            style={{
-                position:"relative", top:"-146px", right:"707px", opacity:"0.7",
-                height: "60px", width:"400px", paddingTop:"300px", borderRadius:"4px",
-                backgroundColor: "white",
-                
-                }}>
-                    
+            <div  style={{
+                width: "90vw",
+                display:"flex",
+                flexWrap: "wrap",
+                alignItems: "center",
+                marginTop:"2rem"
+            }}>
+                    {fakeArray.map(el=>(
                     <FormPosts />
+                    ))}
 
             </div>
                        
