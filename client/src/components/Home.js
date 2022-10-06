@@ -79,7 +79,9 @@ return (
                  style={{paddingTop: "15px"}}
                 id="dropdown-menu3" role="menu">
                 <div class="dropdown-content">
+
                     {/* Where we put the links !!!  (on the href="#" tag !!)*/}
+                    
                         <a href="/board" class="dropdown-item"
                         style={{fontFamily: "medium-font", fontSize:"16px"}}
                         >
