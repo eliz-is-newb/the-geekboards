@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import './Home.css';
 import '../medium.ttf';
 import '../bold.ttf';
 import '../regular.ttf';
@@ -16,36 +15,38 @@ return (
     backgroundImage: "url(./background.png)",
     backgroundSize: "cover", 
   
-    
 
- }}
- > 
+
+ }}> 
+
+<div style={{marginLeft: "200px", marginTop:"-40px", position:"absolute"}}>
 
     <div id="Banner-wrapper"
-    style={{ marginLeft:"225px", paddingTop:"175px", width: "900px", display: "flex", justifyContent: "center",}}
+    style={{ marginLeft:"225px", paddingTop:"225px", width: "100%", display: "flex", justifyContent: "center",}}
     >
         <img 
-        style={{position:"absolute", top:"134px", left:"297px", width:"800px"}}
+        style={{position:"relative", top:"-84px", left:"-265px", width:"1100px"}}
         src="./banner.png" />
     </div>
     <div id="Boards-wrapper"
- style={{paddingTop:"30px", paddingLeft:"211px", display:"flex", justifyItems:"center", width:"1000px"}}
+ style={{paddingTop:"90px", marginLeft:"250px", display:"flex", justifyItems:"center", width:"1000px"}}
     >
 
         <div
         style={{
-            position: "absolute", 
+            position: "relative", 
             backgroundColor:"black", 
             border:"1px white solid", 
-            top:"394px", 
+            top:"-130px", 
             paddingTop:"4px", 
             paddingRight:"2x",
             paddingBottom:"5px",
             paddingLeft: "19px",
-            left: "225px", 
-            zIndex:"4", 
+            left: "-175px", 
+            zIndex:"4",
+            maxHeight:"48px",
             width:"120px",
-            borderRadius: "7px", 
+            borderRadius: "6px", 
             color: "white",
             fontFamily: "bold-font",
             fontSize: "25px"
@@ -53,14 +54,16 @@ return (
             Boards
         </div>
         <div
-        style={{ width:"170px"}}
+        style={{ width:"140px"}}
         >
         <img 
-        style={{position: "relative", right:"-22px", top:"93px"}}
+        style={{position: "relative", right:"265px", top:"-129px"}}
         src="./boards1.png"/>
 
         <div id="boards-dropdown-container"
-        style={{paddingTop:"107px", display:"flex", justifyItems:"center", width:"1000px", paddingLeft:"12px"
+        style={{ display:"flex", justifyItems:"center", flexWrap:"wrap", width:"100vw", marginLeft:"-300px", marginTop:"-100px",
+        rowGap:"2rem"
+// mustafa flex wrap
     }}>
 
        {/* Boards, japanese culture */}
@@ -68,10 +71,10 @@ return (
              <div class="dropdown-trigger">
             
             <button 
-            style={{paddingTop:"32px", paddingBottom:"32px", paddingLeft:"15px", paddingRight:"15px", marginRight:"20px"}}
+            style={{paddingTop:"32px", paddingBottom:"32px", paddingLeft:"15px", paddingRight:"15px", marginRight:"20px",}}
             class="button is-dark" aria-haspopup="true" aria-controls="dropdown-menu">
             <p
-             style={{fontSize: "23px", fontFamily: "bold-font"}}
+             style={{fontSize: "20px", fontFamily: "bold-font"}}
             >Japanese Culture</p>
             </button>
       </div>
@@ -125,7 +128,7 @@ return (
                             style={{paddingTop:"32px", paddingBottom:"32px", paddingLeft:"25px", paddingRight:"25px", marginRight:"20px"}}
                             class="button" aria-haspopup="true" aria-controls="dropdown-menu">
                             <strong
-                            style={{fontSize: "23px", fontFamily: "bold-font"}}
+                            style={{fontSize: "20px", fontFamily: "bold-font"}}
                             >Video Games</strong>
                             </button>
                     </div>
@@ -186,7 +189,7 @@ return (
                             style={{paddingTop:"32px", paddingBottom:"32px", paddingLeft:"25px", paddingRight:"25px",  marginRight:"20px"}}
                             class="button" aria-haspopup="true" aria-controls="dropdown-menu">
                             <strong
-                            style={{fontSize: "23px", fontFamily: "bold-font"}}
+                            style={{fontSize: "20px", fontFamily: "bold-font"}}
                             >Interests</strong>
                             </button>
                     </div>
@@ -248,7 +251,7 @@ return (
                             style={{paddingTop:"32px", paddingBottom:"32px", paddingLeft:"25px", paddingRight:"25px" , marginRight:"20px"}}
                             class="button" aria-haspopup="true" aria-controls="dropdown-menu">
                             <strong
-                            style={{fontSize: "23px", fontFamily: "bold-font"}}
+                            style={{fontSize: "20px", fontFamily: "bold-font"}}
                             >Creative</strong>
                             </button>
                     </div>
@@ -310,7 +313,7 @@ return (
                             style={{paddingTop:"32px", paddingBottom:"32px", paddingLeft:"15px" , marginRight:"20px", width:"120px"}}
                             class="button" aria-haspopup="true" aria-controls="dropdown-menu">
                             <strong
-                            style={{fontSize: "23px", fontFamily: "bold-font"}}
+                            style={{fontSize: "20px", fontFamily: "bold-font"}}
                             >Other</strong>
                             </button>
                     </div>
@@ -362,7 +365,7 @@ return (
                             style={{paddingTop:"32px", paddingBottom:"32px", paddingLeft:"15px", marginRight:"15px", width:"120px"}}
                             class="button" aria-haspopup="true" aria-controls="dropdown-menu">
                             <strong
-                            style={{fontSize: "23px", fontFamily: "bold-font"}}
+                            style={{fontSize: "20px", fontFamily: "bold-font"}}
                             >Music</strong>
                             </button>
                     </div>
@@ -421,7 +424,7 @@ return (
 
 
 
-
+</div>
         </div>
 
     </div>
