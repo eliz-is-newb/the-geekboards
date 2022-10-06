@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+    before_action :set_event, only: %i[ show update destroy ]
     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response 
     rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response 
 
@@ -7,10 +8,15 @@ class PostsController < ApplicationController
         render json: post, serializer: PostSerializer, status: :created 
     end 
     
-    def index 
-        post = Post.all
-        render json: post 
-    end 
+    def index
+        if params[:board_id]
+            board = Board.find(params[:board_id])
+            @posts = board.posts
+        else
+            @posts = Post.all
+        end
+        render json: @posts
+    end
     
     def comments 
         post = find_post 
