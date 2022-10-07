@@ -14,7 +14,7 @@ post '/users',            to: 'users#create'
 get '/posts',                   to: 'posts#index'
 get '/boards/:id/posts',        to: 'posts#show' 
 get '/boards/:id/posts/:id',    to: 'posts#show'
-patch '/boards/:id/posts/:id'  to: 'posts#update'
+patch '/boards/:id/posts/:id',   to: 'posts#update'
 post '/boards/:id/posts',       to: 'posts#create'
 delete '/boards/:id/posts/:id', to: 'posts#destroy'
 
