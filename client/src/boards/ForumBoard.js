@@ -3,18 +3,22 @@ import'../medium.ttf';
 import'../bold.ttf';
 import'../regular.ttf';
 import FormPosts from "./ForumPosts";
+import './PostCSS.css';
+import NewPostForm from "./NewPostForm";
 
 const ForumBoard = () => {
 
-    const fakeArray = [1,2,3,4,5,7]
+    const fakeArray = [1,2,3,4,5,6]
 return (
 
 <>
 <div id="page-background-wrapper"
 style={{
     height: "120vh",
+    width:"100%",
     backgroundImage: "url(./background.png)",
     backgroundSize: "cover", 
+    backgroundRepeat: "repeat-x"
 
  }}>
 
@@ -33,42 +37,34 @@ style={{
      paddingTop:"6px", borderRadius:"4px", left:"770px",
 
  }}>
-    {/* <div style={{
-
-    height: "50px", width:"691px",
-    backgroundColor: "white", paddingTop:"6px", borderRadius:"4px", left:"881px",
-    position:"absolute", top:"-129px"
-    }}>
-
-        
-    </div>
-
-    <img 
-    style={{position:"absolute", top:"-131px", right:"-12px", width:"60px", display:"inline-block", transform: "rotate(270deg)"}}
-    
-    src="./doublearrow.png"></img> */}
-
+  
     
 
 <div id="board-title">
             <div style={{
                 display:"flex", justifyContent:"center",
-                width:"184px",
+                width:"184px", marginLeft:"20px",
                 paddingTop:"20px", paddingBottom:"20px", borderRadius:"10px",
-                backgroundColor: "black", border:"white 1px solid",
+                backgroundColor: "black", border:"white 2px solid",
                 fontFamily:"bold-font",
                 fontSize:"20px",
                 color:"white",
             
                 
                 }}>
+{/* ├┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┤ᴥ•ʔっ name of the board goes here ├┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┴┬┤ */}
+            <p>Anime & Manga</p> 
             
-            Anime & Manga
-
             </div>
+{/* ├┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┴┬┴┬┴┴┬┴┬┴┴┴┬┴┬┤ */}
+           
 
+                                {/* ├┬┴┬┴┬┴┬┴┬┴┤ᴥ•ʔっ button for add new post & post component goes here ├┬┴┬┴┬┴┴┬┤ */}
+                                            
+                                           
+                                            <NewPostForm />
 
-
+                                {/* ├┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┴┬┴┬┴┴┬┴┬┴┬┴┴┬┴┬┴┴┬┴┬┴┬┴┴┬┴┬┤ */}
 
 </div>
 
@@ -79,6 +75,8 @@ style={{
                 alignItems: "center",
                 marginTop:"2rem"
             }}>
+                {/* DEMO MAP OF ARRAY */}
+
                     {fakeArray.map(el=>(
                     <FormPosts />
                     ))}
