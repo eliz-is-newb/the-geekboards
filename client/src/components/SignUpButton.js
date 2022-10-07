@@ -43,13 +43,13 @@ return (
                 style={{
                 padding:"2rem",
                 paddingInline:"2rem",
-                marginTop:"28px", 
+                marginTop:"1px", 
                 marginRight:"19px",
-                height: "350px",
+                height: "390px",
                 width:"250px",
                 backgroundColor:"white", 
                 fontFamily:"bold-font", 
-                color:"white", 
+                color:"black", 
                 borderTop:"none",
                 border:"1px white solid",
                 borderRadius:"7px"}}>
@@ -57,7 +57,7 @@ return (
 
                                     {/* ʚ♥ɞ Start of Form ʚ♥ɞ */}
                                     
-
+                                    <p style={{fontFamily: "bold-font", fontSize:"20px", marginBottom:"10px", }}>You know what it is! (Get to it!)</p>
                                     {/* ʚ♥ɞ Username Input */}
                                     <div class="field">
                                     

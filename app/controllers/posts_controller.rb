@@ -11,20 +11,21 @@ class PostsController < ApplicationController
         post = Post.all
         render json: post 
     end 
-    
-    def comments 
-        post = find_post 
-        render json: post.comments
+
+    def update 
+        post = find_post
+        post.update!(post_params)
+        render json: post, , status: :ok
     end 
     
     def show 
         posts = find_post
-        render json: post 
+        render json: posts 
     end 
     
     def destroy 
         post = find_post 
-        Post.destroy
+        post.destroy
         head :no_content 
     end 
     

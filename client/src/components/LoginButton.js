@@ -43,7 +43,7 @@ return (
                 paddingInline:"2rem",
                 marginTop:"25px", 
                 marginRight:"33px",
-                height: "230px",
+                height: "280px",
                 width:"250px",
                 backgroundColor:"black", 
                 fontFamily:"bold-font", 
@@ -54,7 +54,8 @@ return (
 
 
                                     {/* ʚ♥ɞ Start of Form ʚ♥ɞ */}
-                                    
+                                    <p style={{fontFamily: "bold-font", fontSize:"20px", marginBottom:"10px", }}>Back again for more? (Heh heh...)</p>
+
                                     {/* ʚ♥ɞ Email Input */}
                                     <div class="field">
                                     

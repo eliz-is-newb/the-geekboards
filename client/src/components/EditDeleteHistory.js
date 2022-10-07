@@ -39,7 +39,8 @@ return (
 
      {/* ʚ♥ɞ Start of Form ʚ♥ɞ */}   
     <div class="dropdown-item">
-    <p style={{fontFamily: "bold-font", fontSize:"25px"}}>Edit Something Marcus!</p>
+    <p style={{fontFamily: "bold-font", fontSize:"25px"}}>Post History (mapped info below... maybe?)</p>
+    <p style={{fontFamily: "bold-font", fontSize:"15px"}}>Edit Something Marcus!</p>
     </div>
     <div class="dropdown-item">
 

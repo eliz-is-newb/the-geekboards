@@ -1,6 +1,13 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
+# ʚ♥ɞ puts statements
+puts "Seed Destroyed"
+puts "Seed Started"
 
+User.destroy_all
+Post.destroy_all
+Comment.destroy_all
+Board.destroy_all
 
 #  ʚ♥ɞ Boards
 
@@ -70,18 +77,21 @@ user6 = User.create(username: "mr_SaladFingers", email: "shiteater@youtube.com",
 
 # ʚ♥ɞ posts
 
-post1 = Post.create(title: "I lost my dog", image_url:"https://i.kym-cdn.com/photos/images/facebook/001/357/190/e68.jpg", body:"Help, idk where he went omg!!", board_id: 23, user_id: 1 )
-post2 = Post.create(title: "Anyone seeing shadow people?", image_url:"", body:"Anyone?", board_id: 26, user_id:3 )
-post3 = Post.create(title: "I Wanna watch this show", image_url:"https://i.ytimg.com/vi/UfiU6b8LZb0/maxresdefault.jpg", body:"Opinions on gabriel drop out?", board_id: 1 , user_id: 2 )
-post4 = Post.create(title: "YOOOO!", image_url:"https://www.digitaltrends.com/wp-content/uploads/2022/08/Chainsaw-Man-trailer.jpg?p=1", body:"Chainsaw man!!! Stream links?", board_id: 1 , user_id: 4)
-post5 = Post.create(title: "What do you watch when you code?", image_url:"", body:"I sometimes watch bo burnham's depressing comedy shows. they remind me that i'm not a total loser.", board_id: 19, user_id: 6 )
-post6 = Post.create(title: "yoo :(", image_url:"https://i.redd.it/x5452hhoq4b11.jpg", body:"no comment", board_id: 19 , user_id: 4)
+post1 = Post.create(title: "I lost my dog", image_url:"https://i.kym-cdn.com/photos/images/facebook/001/357/190/e68.jpg", body:"Help, idk where he went omg!!", board_id: 23, user_id: User.all.sample.id)
+post2 = Post.create(title: "Anyone seeing shadow people?", image_url:"", body:"Anyone?", board_id: 26, user_id: User.all.sample.id)
+post3 = Post.create(title: "I Wanna watch this show", image_url:"https://i.ytimg.com/vi/UfiU6b8LZb0/maxresdefault.jpg", body:"Opinions on gabriel drop out?", board_id: 1 , user_id: User.all.sample.id)
+post4 = Post.create(title: "YOOOO!", image_url:"https://www.digitaltrends.com/wp-content/uploads/2022/08/Chainsaw-Man-trailer.jpg?p=1", body:"Chainsaw man!!! Stream links?", board_id: 1 , user_id: User.all.sample.id)
+post5 = Post.create(title: "What do you watch when you code?", image_url:"", body:"I sometimes watch bo burnham's depressing comedy shows. they remind me that i'm not a total loser.", board_id: 19, user_id: User.all.sample.id)
+post6 = Post.create(title: "yoo :(", image_url:"https://i.redd.it/x5452hhoq4b11.jpg", body:"no comment", board_id: 19 , user_id: User.all.sample.id)
 
 # ʚ♥ɞ comments
 
-comment1 = Comment.create(body: "Damn...", post_id: 5, user_id: 2 )
-comment2 = Comment.create(body: "animixplay.to dawg", post_id: 4 , user_id: 5)
-comment3 = Comment.create(body: "Smh.", post_id: 5, user_id: 3 )
-comment4 = Comment.create(body: "Lmao.", post_id: 6 , user_id: 3)
-comment5 = Comment.create(body: "That's an ugly dog", post_id: 1 , user_id: 3)
-comment6 = Comment.create(body: "Bump.", post_id: 1 , user_id: 6 )
+comment1 = Comment.create(body: "Damn...", post_id: 5, user_id: User.all.sample.id )
+comment2 = Comment.create(body: "animixplay.to dawg", post_id: Post.all.sample.id , user_id: User.all.sample.id)
+comment3 = Comment.create(body: "Smh.", post_id: 4, user_id: User.all.sample.id)
+comment4 = Comment.create(body: "Lmao.", post_id: 6 , user_id: User.all.sample.id)
+comment5 = Comment.create(body: "That's an ugly dog", post_id: 1 , user_id: User.all.sample.id)
+comment6 = Comment.create(body: "Bump.", post_id: 1 , user_id: User.all.sample.id)
+
+# ʚ♥ɞ Puts statement
+puts "Seed Done"

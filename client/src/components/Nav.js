@@ -7,7 +7,7 @@ import Dashboard from "./Dashboard";
 const Nav = () => {
    
   const [loggedIn, setLoggedIn] = useState(false) 
-  const [loggedInDashboard, setLoggedInDashboard] = useState(false) 
+  const [loggedInDashboard, setLoggedInDashboard] = useState(true) 
 
   // ʚ♥ɞ Toggle this [true/false] to show the login/dashboard/logout in nav ^^^^ 
   

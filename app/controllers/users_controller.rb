@@ -6,7 +6,7 @@ class UsersController < ApplicationController
             user = User.create!(user_params)
             render json: user, serializer: UserSerializer, status: :created 
         end 
-        
+
         def index 
             users = User.all 
             render json: users
@@ -22,12 +22,17 @@ class UsersController < ApplicationController
             render json: User.comment
         end 
         
-        
-        private 
-        
-        def find_user
-            User.find(params[:id]) 
+        def find_user_posts
+            user = User.find(params[:id])
+            render json: user, serializer: ShowUserPostsSerializer  
         end 
+
+
+        private 
+
+        def find_user
+            User.find(params[:id])
+        end
         
         def user_params 
             params.permit(:username, :password, :email) 
