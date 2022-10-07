@@ -26,7 +26,7 @@ return (
     style={{paddingTop: "20px", paddingRight:"20px", backgroundColor: "transparent"}}
     >
 
-<a  style={{borderRadius:"4px", border:"1px white solid", backgroundColor:"transparent", color:"white", marginRight:"18px", padding:"16px"}}
+<a  style={{borderRadius:"4px", border:"0px white solid", backgroundColor:"transparent", color:"white", marginRight:"18px", padding:"16px"}}
           class="button is-small">
            
             <strong
@@ -48,7 +48,7 @@ return (
                 backgroundColor:"black", 
                 fontFamily:"bold-font", 
                 color:"white", 
-                border:"1px solid white",
+        
                 borderTop:"none",
                 borderRadius:"7px"}}>
 
