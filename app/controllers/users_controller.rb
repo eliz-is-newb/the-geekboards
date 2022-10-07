@@ -7,6 +7,11 @@ class UsersController < ApplicationController
             render json: user, serializer: UserSerializer, status: :created 
         end 
         
+        def index 
+            users = User.all 
+            render json: users
+        end 
+
         def show 
             user = find_user
             render json: user
@@ -14,7 +19,7 @@ class UsersController < ApplicationController
         
         def user_comments 
             user = find_user 
-            render json: user.comments
+            render json: User.comment
         end 
         
         

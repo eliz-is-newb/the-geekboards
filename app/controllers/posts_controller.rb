@@ -24,7 +24,7 @@ class PostsController < ApplicationController
     
     def destroy 
         post = find_post 
-        post.destroy
+        Post.destroy
         head :no_content 
     end 
     
