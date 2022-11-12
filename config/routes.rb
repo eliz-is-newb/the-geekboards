@@ -29,7 +29,12 @@ post '/boards/:id/posts/:id/comments',       to: 'comments#create'
 delete '/boards/:id/posts/:id/comments/:id', to: 'comments#destroy'
 
 
+  # USER AUTHORIZATION CONTROLS
+  post "/login", to: "sessions#create"
+  delete "/logout", to: "sessions#destroy"
 
+  post "/signup", to: "users#create"
+  get "/me", to: "users#show"
 
   # Routing logic: fallback requests for React Router.
   # Leave this here to help deploy your app later!
