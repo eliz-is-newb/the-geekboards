@@ -16,7 +16,7 @@ class CommentsController < ApplicationController
     
      def destroy 
         comment = find_comment 
-        comment.destroy
+        Comment.destroy
         head :no_content 
     end 
     

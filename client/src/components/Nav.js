@@ -1,6 +1,25 @@
 import React, {useState} from "react";
+import NavSearchBar from "./NavSearchBar";
+import LoginButton from "./LoginButton"; 
+import SignUpButton from "./SignUpButton";
+import Dashboard from "./Dashboard";
 
 const Nav = () => {
+   
+  const [loggedIn, setLoggedIn] = useState(false) 
+  const [loggedInDashboard, setLoggedInDashboard] = useState(true) 
+
+  // ʚ♥ɞ Toggle this [true/false] to show the login/dashboard/logout in nav ^^^^ 
+  
+  function handleDropDown() { 
+    var dropdown = document.querySelector('#faq')
+    dropdown.classList.toggle('is-active')}
+
+  const [hideSignUp, setHideSignUp] = useState(false)
+
+
+
+
 return (
 
 
@@ -30,9 +49,13 @@ return (
       <div class="control"
       style={{paddingLeft:"20px", marginLeft:"225px", paddingRight:"20px"}}
       >
-        <input 
-        style={{borderRadius: "4px", width:"700px",maxWidth:"120%", height:"27px", backgroundColor:"white", border:"black 1px solid", color:"black"}}
-        class="input is-small" type="search" placeholder="Search..."/>
+        {/* ├┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┤ᴥ•ʔっ♥ Here is where the ternary is for the navsearch bar ├┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┤ */}
+
+        {loggedIn 
+			?  <NavSearchBar />
+			: null
+		}
+       
          <span>
          <i
          style={{paddingBottom:"3px"}}
@@ -50,34 +73,24 @@ return (
 
   
   </div>
-
+ {/* ├┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┤ᴥ•ʔっ♥ Here is where the ternary is for dashboard/login & signup ├┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┴┬┤ */}
   <div class="navbar-end" 
   style={{ paddingTop:"18px", paddingLeft:"200px"}}
     >
       <div class="navbar-item">
         <div class="buttons">
-          <a  style={{borderRadius:"4px", backgroundColor:"transparent", color:"white", marginRight:"15px", padding:"10px", paddingTop:"5px"}}
-          class="button is-small">
+          {loggedInDashboard ? <Dashboard setLoggedInDashboard={setLoggedInDashboard}/>
            
-            <strong
-            style={{fontFamily: "bold-font", fontSize: "19px", paddingTop:"4px"}}
-            >Login</strong>
-          </a>
-          <a 
-          style={{backgroundColor: "white", color:"black", borderRadius:"4px"}}
-          class="button is-small is-primary">
-            <strong
-             style={{fontFamily: "bold-font", fontSize: "19px"}}
-            
-            >
-              Sign up</strong>
-          </a>
+         : [ <LoginButton />, <SignUpButton />]
+  }
+
+
         </div>
       </div>
     </div>
 
-    <div class="navbar-item has-dropdown is-hoverable is-trigger"
-    style={{paddingTop: "20px", paddingRight:"40px", backgroundColor: "transparent"}}
+    <div class="navbar-item has-dropdown is-trigger" id="faq" onClick={handleDropDown}
+    style={{paddingTop: "18px", paddingRight:"20px", backgroundColor: "transparent"}}
     >
         <a 
         style={{backgroundColor:"transparent"}}
@@ -86,16 +99,16 @@ return (
         </a>
 
         <div class="navbar-dropdown is-right"
-        style={{marginTop:"20px", marginRight:"20px", backgroundColor:"black", fontFamily:"regular-font", color:"white", border:"1px black solid", borderRadius:"7px"}}
+        style={{marginTop:"50px", marginRight:"20px", backgroundColor:"white", fontFamily:"bold-font", color:"white", border:"1px white solid", borderRadius:"7px"}}
         >
           <a class="navbar-item">
             About
           </a>
           <a class="navbar-item">
-            Jobs
+            What is 4Chan?
           </a>
           <a class="navbar-item">
-           Help
+           FAQ
           </a>
           
       </div>

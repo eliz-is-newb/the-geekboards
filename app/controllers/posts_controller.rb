@@ -8,6 +8,17 @@ class PostsController < ApplicationController
         render json: post, serializer: PostSerializer, status: :created 
     end 
     
+
+    def index 
+        post = Post.all
+        render json: post 
+    end 
+
+    def update 
+        post = find_post
+        post.update!(post_params)
+        render json: post, , status: :ok
+
     def index
         if params[:board_id]
             board = Board.find(params[:board_id])
@@ -21,11 +32,12 @@ class PostsController < ApplicationController
     def comments 
         post = find_post 
         render json: post.comments
+
     end 
     
     def show 
         posts = find_post
-        render json: post 
+        render json: posts 
     end 
     
     def destroy 

@@ -1,4 +1,6 @@
 class PostSerializer < ActiveModel::Serializer
-  attributes :id, :date, :body, :board_id
-  has_many :comments
+  attributes :id, :title, :body, :image_url
+  belongs_to :user
+  belongs_to :board 
+
 end
